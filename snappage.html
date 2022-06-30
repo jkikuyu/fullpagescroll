@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="app" class="container">
+        <div class="sections-menu">
+            <span :class="[activeSection == index? 'active':'','menu-point']"
+               v-on:click="scrollToSection(index)"
+               v-for="(offset, index) in offsets"
+               v-bind:key="index">
+               test {{ index }}
+            </span>
+
+        </div>
+        <section class="one">
+            <h1>
+                First page
+            </h1>
+        </section>
+        <section class="two">
+            <h1>
+                Second page
+            </h1>
+        </section>        
+        <section class="three">
+            <h1>
+                Third page
+            </h1>
+        </section>        
+        <section class="four">
+            <h1>
+                Fourth page
+            </h1>
+        </section>
+    </div>
+    <script src="https://unpkg.com/vue@next"> </script>
+    <script src="app.js"></script>
+</body>
+</html>
