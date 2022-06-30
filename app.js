@@ -1,3 +1,4 @@
+//js from https://webdeasy.de/en/programming-vue-js-fullpage-scroll/?ref=morioh.com#frameworks
 const app = Vue.createApp({
     data() {
       return {
