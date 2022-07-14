@@ -23,6 +23,7 @@
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
         height: 100vh;
+        display: flex;
 
     }
 
@@ -65,8 +66,9 @@ body {
   font-family: Helvetica, arial, sans-serif;
   overflow: hidden;
 }
-
-
+#footer {
+  background-color: #0000ffff;
+}
 @media screen and (max-width: 1200px) {
   h1 {
     font-size: 2.5em;
